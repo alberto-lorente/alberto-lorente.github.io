@@ -8,7 +8,7 @@ const {fullName, title, institute, profilePicture} = Astro.props
 ---
 <div class='flex-1'>
   <h1 class='text-4xl font-bold mb-4'>
-    Welcome! I'm <span class='text-secondary'>{fullName}</span>
+    Hi! I'm <i>{fullName}</i>
   </h1>
   <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
   <p class='text-lg mb-6'>
@@ -26,4 +26,8 @@ const {fullName, title, institute, profilePicture} = Astro.props
     alt={fullName}
     class='w-full h-full mask mask-circle size-44'
   />
+    <figcaption class="mt-3 text-sm italic text-center">
+      Recent view from Hanoi, Vietnam
+    </figcaption>
+
 </div>

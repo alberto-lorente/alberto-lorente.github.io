@@ -1,11 +1,28 @@
 export const experiences = [
 	{
-		company: '',
-		time: '',
-		title: '',
-		location: '',
+		company: 'CNRS@CREATE',
+		time: 'April 2025 - October 2025',
+		title: 'AI Research Engineer Intern',
+		location: 'CREATE@NUS, Singapore',
 		description: '',
 	},
+
+	{
+		company: 'Pangeanic',
+		time: 'April 2023 - August 2023',
+		title: 'Linguist Intern',
+		location: 'Valencia, Spain',
+		description: '',
+	},
+
+	{
+		company: 'Cillero & De Motta',
+		time: 'February 2022 - June 2022',
+		title: 'Linguist Intern',
+		location: 'Zaragoza, Spain',
+		description: '',
+	},
+
 	// {
 	// 	company: 'Radium Institute (Institut du Radium)',
 	// 	time: '1914 - 1934',
@@ -17,10 +34,24 @@ export const experiences = [
 
 export const education = [
 	{
-		school: '',
-		time: '',
-		degree: '',
-		location: '',
+		school: 'Université de Lorraine, IDMC',
+		time: 'September 2023 – September 2025',
+		degree: 'MSc in Natural Language Processing',
+		location: 'Nancy, France',
+		description: '',
+	},
+	{
+		school: 'Instituto Superior de Estudios Lingüísticos y Traducción',
+		time: 'September 2021 – September 2023',
+		degree: 'MA in Specialized Translation: Biomedical Translation',
+		location: 'Zaragoza, Spain',
+		description: '',
+	},
+	{
+		school: 'Universidad de Zaragoza',
+		time: 'September 2017 – September 2022',
+		degree: 'BA in English Studies',
+		location: 'Zaragoza, Spain',
 		description: '',
 	},
 	// {
@@ -52,12 +83,4 @@ export const publications = [
 		link: '',
 		abstract: '',
 	},
-	// {
-	// 	title: 'The Radiation of Uranium Compounds',
-	// 	authors: 'Marie Curie',
-	// 	journal: 'Comptes Rendus de l’Académie des Sciences',
-	// 	time: '1898',
-	// 	link: '#',
-	// 	abstract: 'Early research leading to the identification of uranium’s radioactive properties.',
-	// },
 ];

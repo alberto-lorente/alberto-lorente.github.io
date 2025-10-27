@@ -1,5 +1,5 @@
 export const profile = {
-	fullName: 'Your Name',
+	fullName: 'Alberto Lorente Galé',
 	title: '',
 	institute: '',
 	author_name: '', // Author name to be highlighted in the papers section
@@ -10,10 +10,10 @@ export const profile = {
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
-	linkedin: '',
-	x: 'https://www.x.com/',
-	github: '',
+	email: 'albertolorente97@gmail.com',
+	linkedin: 'https://www.linkedin.com/in/alberto-lorente-gale/',
+	x: '',
+	github: 'https://github.com/alberto-lorente',
 	gitlab: '',
 	scholar: '',
 	inspire: '',
