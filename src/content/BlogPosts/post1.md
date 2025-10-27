@@ -1,6 +1,6 @@
 ---
 title: ""
-date: ""
+date: "2025-10-27"
 tags: ["", ""]
 excerpt: ""
 ---
