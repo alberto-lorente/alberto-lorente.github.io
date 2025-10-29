@@ -65,7 +65,66 @@ export const education = [
 
 export const skills = [
 	{
-		title: '',
+		title: 'Python',
+		description: '',
+	},
+	{
+		title: 'SQL',
+		description: '',
+	},
+	{
+		title: 'Protégé',
+		description: '',
+	},
+	{
+		title: 'Pytorch',
+		description: '',
+	},
+	{
+		title: 'TRL',
+		description: '',
+	},
+	{
+		title: 'transformers',
+		description: '',
+	},
+	{
+		title: 'spaCy',
+		description: '',
+	},
+	{
+		title: 'Ollama',
+		description: '',
+	},
+	{
+		title: 'langchain',
+		description: '',
+	},
+	{
+		title: 'llama-index',
+		description: '',
+	},
+	{
+		title: 'sklearn',
+		description: '',
+	},
+	{
+		title: 'pandas',
+		description: '',
+	},
+	{
+		title: 'numpy',
+		description: '',
+	},
+	{
+		title: 'seaborn',
+		description: '',
+	},
+	{
+		title: 'streamlit',
+		description: '',
+	},{
+		title: 'gradio',
 		description: '',
 	},
 	// {
@@ -75,12 +134,38 @@ export const skills = [
 ];
 
 export const publications = [
-	{
-		title: '',
+		{
+		title: 'Spanish C2 - Native Language',
 		authors: '',
-		journal: '',
+		journal: 'Spanish C2 - Native Language',
 		time: '',
 		link: '',
 		abstract: '',
 	},
+
+	{
+		title: 'English C2 - Cambridge English Level 3 Proficiency Certificate (2018)',
+		authors: '',
+		journal: 'English C2 - Cambridge English Level 3 Proficiency Certificate',
+		time: '',
+		link: '',
+		abstract: '',
+	},
+	{
+		title: 'French A2 - Self-assessed',
+		authors: '',
+		journal: 'French A2 - Self-assessed',
+		time: '',
+		link: '',
+		abstract: '',
+	},
+	{
+		title: 'Czech A1 -  Czech Beginners I Certificate by Masarykova Univerzita (2019)',
+		authors: '',
+		journal: 'Czech A1 -  Czech Beginners I Certificate by Masarykova Univerzita',
+		time: '',
+		link: '',
+		abstract: '',
+	},
+	
 ];

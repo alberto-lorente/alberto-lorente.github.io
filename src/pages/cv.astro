@@ -6,14 +6,15 @@ import CvTimeline from '@/components/ui/CvTimeline.astro'
 import type { Experience, Education, Publication } from '../types/cv'
 import List from '@/components/ui/List.astro'
 import PublicationsList from '@/components/ui/PublicationsList.astro'
+import SkillList from '@/components/ui/SkillList.astro'
 
 let orderedExperiences: Experience[] = []
 let orderedEducations: Education[] = []
 let orderedPublications: Publication[] = []
 
 const orderElement = <T extends { time: string }>(a: T, b: T) => {
-  const presentValues = ['present', 'now', 'current', 'today']
-  if (
+	const presentValues = ['present', 'now', 'current', 'today']
+	if (
 			presentValues.includes(
 				(a['time'] as string)?.split(' - ')[1]?.toLowerCase()
 			)
@@ -61,7 +62,7 @@ if (publications.length > 0) {
 		orderedExperiences.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
-					Experiences
+					Work Experience
 				</h2>
 				<CvTimeline elements={orderedExperiences} colored={true} />
 			</section>
@@ -79,11 +80,11 @@ if (publications.length > 0) {
 		)
 	}
 
-	{
+{
 		skills.length > 0 && (
-			<section class='mb-12'>
-				<List listTitle='Skills' listItems={skills}/>
+			<section class="mb-12">
+			<SkillList listTitle="Skills" listItems={skills.map(s => s.title)} />
 			</section>
 		)
-	}
+		}
 </Layout>
