@@ -10,7 +10,7 @@ const { research_areas } = profile;
 
 <Layout title="Research | Dr. Marie Curie">
   <div class="prose max-w-none">
-    <h1 class="text-3xl font-bold mb-8">Research Statement</h1>
+    <h1 class="text-3xl font-bold mb-8">Research Interests</h1>
 
     <div class="mb-12">
       <p class="text-lg mb-6">
@@ -21,7 +21,7 @@ const { research_areas } = profile;
       </p>
     </div>
 
-    <h2 class="text-2xl font-bold mb-6">Research Areas</h2>
+    <!-- <h2 class="text-2xl font-bold mb-6">Research Areas</h2>
     <div class="grid gap-8 mb-12">
       {
         research_areas.map((area) => (
@@ -48,22 +48,19 @@ const { research_areas } = profile;
           </div>
         ))
       }
-    </div>
+    </div> -->
 
-    <List listTitle="Current Projects" listItems={[
+    <List listTitle="Past Projects" listItems={[
+      
       {
-        title: "Radioactivity Studies",
-        description: "Investigation of radioactive properties in uranium minerals and isolation of new radioactive elements."
-      },
-      {
-        title: "Measurement Techniques",
+        title: "Continual Hate",
         description: "Development of precise methods for measuring radioactive emissions and their properties."
       }
     ]} />
 
-    <h2 class="text-2xl font-bold mb-6">Research Impact</h2>
+    <!-- <h2 class="text-2xl font-bold mb-6">Research Impact</h2>
     <p class="text-lg mb-6">
       My research has opened new frontiers in radioactivity studies, leading to practical applications in both scientific research and medical treatments. The discoveries have revolutionized our understanding of atomic structure and radioactive decay processes.
-    </p>
+    </p> -->
   </div>
 </Layout>
