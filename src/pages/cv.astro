@@ -77,13 +77,13 @@ if (research.length > 0) {
 	}
 
 	{
-		research.length > 0 && (
+		orderedResearch.length > 0 && (
 			<section class="mb-12">
 				<h2 class="text-2xl font-bold mb-6 border-b pb-2">
 					Past Research Projects
 				</h2>
 				<List 
-					listItems={research} 
+					listItems={orderedResearch} 
 				/>
 			</section>
 		)
@@ -100,11 +100,11 @@ if (research.length > 0) {
 		)
 	}
 
-{
+	{
 		skills.length > 0 && (
 			<section class="mb-12">
 			<SkillList listTitle="Skills" listItems={skills.map(s => s.title)} />
 			</section>
 		)
-		}
+	}
 </Layout>
