@@ -173,7 +173,6 @@ export const publications = [
 export const research = [
 	{
 		title: "Continual Hate",
-		time: "2025",
 		institution: "CNRS@CREATE, Singapore",
 		description: "In 2025 I joined CNRS@CREATE in Singapore as an intern to research Domain-Incremental Continual Learning for Hate Speech Detection.\nThe main objective of the project was studying domain transfer feasibility among hate speech directed at general targets and the effect of CL on hate-positive predictions.\nAfter the first exploration focused on Transformer models, I moved to experimenting with QLoRA finetuned Llamas and possible LoRA merging techniques, mainly ZipLoRA, with more granular hate-targets. Finally, I conducted a small survey on time-agnostic/aware strategies and potential interactions with Continual Learning. The results of the project are expected to be published in 2026."
 	},

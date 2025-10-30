@@ -30,7 +30,6 @@ export interface Publication {
 
 export interface ResearchProject {
   title: string
-  time?: string
   institution?: string
   description: string
   link?: string
@@ -51,9 +50,5 @@ export function isSkill(element: Skill | Publication): element is Skill {
 
 export function isPublication(element: Skill | Publication): element is Publication {
   return 'authors' in element;
-}
-
-export function isResearchProject(element: ResearchProject | Experience | Education) : element is ResearchProject {
-  return 'description' in element && !('company' in element) && !('institution' in element)
 }
 

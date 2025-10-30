@@ -46,11 +46,7 @@ if (publications.length > 0) {
 	})
 }
 
-if (research.length > 0) {
-	orderedResearch = research.sort((a, b) => {
-	return orderElement(a, b)
-	})
-}
+
 ---
 
 <Layout>
@@ -77,13 +73,13 @@ if (research.length > 0) {
 	}
 
 	{
-		orderedResearch.length > 0 && (
+		research.length > 0 && (
 			<section class="mb-12">
 				<h2 class="text-2xl font-bold mb-6 border-b pb-2">
 					Past Research Projects
 				</h2>
 				<List 
-					listItems={orderedResearch} 
+					listItems={research} 
 				/>
 			</section>
 		)
