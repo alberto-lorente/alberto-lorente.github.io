@@ -4,15 +4,18 @@ import Layout from '@/layouts/Layout.astro'
 import { trimExcerpt } from '@/lib/utils'
 import { template } from '@/settings'
 import { getCollection } from 'astro:content'
+import type { GetStaticPaths } from 'astro';
+import type { PageProps } from '@/types/blog';
 
-export async function getStaticPaths({ paginate }): Promise<Astro.getStaticPathsResult> {
-    const blogEntries = await getCollection("blog");
 
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+	const blogEntries = await getCollection("blog");
+	
     const posts = blogEntries
         .map(post => ({
             title: post.data.title,
             date: post.data.date,
-			order: post.data.order ?? 0, // fallback if undefined
+			order: post.data.order ?? 0,
             badge: post.data.tags?.[0] ?? '',
             excerpt: trimExcerpt(post.data.excerpt),
             slug: `${template.base}/blog/${post.id}`,
@@ -23,7 +26,9 @@ export async function getStaticPaths({ paginate }): Promise<Astro.getStaticPaths
         pageSize: template.postPerPage,
     });
 }
-const { page } = Astro.props
+
+const { page } = (Astro.props as unknown as PageProps);
+
 ---
 
 <Layout title='Projects'>
