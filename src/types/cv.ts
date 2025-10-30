@@ -28,6 +28,15 @@ export interface Publication {
   abstract?: string;
 }
 
+export interface ResearchProject {
+  title: string
+  time?: string
+  institution?: string
+  description: string
+  link?: string
+}
+
+
 export function isExperience(element: Experience | Education): element is Experience {
   return 'title' in element && 'company' in element;
 }
@@ -43,3 +52,8 @@ export function isSkill(element: Skill | Publication): element is Skill {
 export function isPublication(element: Skill | Publication): element is Publication {
   return 'authors' in element;
 }
+
+export function isResearchProject(element: ResearchProject | Experience | Education) : element is ResearchProject {
+  return 'description' in element && !('company' in element) && !('institution' in element)
+}
+
