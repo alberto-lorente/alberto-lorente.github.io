@@ -5,6 +5,7 @@ export interface Post {
     badge: string;
     excerpt: string;
     slug: string;
+    git_url: string;
 }
 
 export interface PageProps {

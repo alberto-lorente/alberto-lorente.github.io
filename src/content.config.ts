@@ -16,6 +16,7 @@ const blog = defineCollection({
         order: z.number().optional(),
         excerpt: z.string(),
         tags: z.array(z.string()).optional(),
+        git_url: z.string().optional(),
     }),
 });
 // 4. Export a single `collections` object to register your collection(s)
